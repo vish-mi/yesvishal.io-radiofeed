@@ -3,7 +3,10 @@
     background-size: cover;
 }
 html,
-body,
+body
+{
+background-color: #fffff5;
+}
 header,
 .view {
   height: 100%;
@@ -14,7 +17,7 @@ header,
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #e0e0e0;
+  background-color:#8bc34a;
   z-index: 9999;
 }
 .outer {
@@ -36,7 +39,10 @@ header,
 }
 
 
-
+.ltxt
+{
+color: #4e3829;
+}
 
 /* parallax css */
 
@@ -196,7 +202,7 @@ svg {
     background-position: center;
   }
   .slide:nth-child(3) .slide__overlay-path {
-    fill: #5e2121;
+    fill:#8a5f5f;
   }
   @media (max-width: 991px) {
     .slide:nth-child(3) .slide__text {
@@ -458,7 +464,7 @@ a {
                           Navbar
   ======================================================*/
 #navbar {
-  background: #fcffd0;
+  background: #feffe4;
   color: rgb(13, 26, 38);
   position: fixed;
   top: 0;
@@ -520,7 +526,7 @@ a {
 }
 
 #navbar li a {
-  color: #543925;
+  color:#3e2723;
   display: block;
   font-size: 1em;
   height: 50px;
@@ -536,7 +542,7 @@ a {
 
 #navbar li a:hover {
   /* border-bottom: 1px solid rgb(28, 121, 184); */
-  color: #92c719;
+  color:rgb(122, 164, 34);
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
 }
@@ -756,4 +762,24 @@ a {
   color: rgb(28, 121, 184);
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+.txt
+{
+color: #5d4331;
+}
+
+.card1
+{
+background-color: #afe471 !important;
+
+}
+
+
+#we
+{
+  color: brown;
+  }
+#crd2
+{
+background-color: #feffe4;
 }
