@@ -1,878 +1,407 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>S2S Education</title>
-	<!-- Font Awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/css/mdb.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- Title  -->
+    <title>Live Radio Feed</title>
 
-<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Favicon  -->
+ 
+ 
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
 
 </head>
+
 <body>
-<!-- 
-<div id="loader">
-	<div class="outer">
-		<div class="inner">
-      
-  
-			<img src="S2S_tree.png" width="350" height="400">
-			<div class="text"><h3 class="ltxt">S2S Tree </h3> With skills at its roots, knowledge tree thrives on the side of the above description
-</div>
-
-		</div>
-	</div>
-	
-	
-</div>
- -->
-
-
-
-
-
-
-
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-
-    <a href="#home" class="font-weight-bold">
-
-
-        <img src="Logo.png" width="65" height="45">
-
-        &nbsp; Seed2Sapling Education
-      </a>
-
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-      <ul class="nav navbar-nav ml-auto float-right">
-        <li class="nav-item">
-        <a class="nav-link" href="index.html"><strong>Home </strong></a>
-        </li>
-         <li class="nav-item">           
-          <a class="nav-link" href="#about"><strong>About us</strong></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#our"><strong>Our solutions</strong></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact"><strong>Contact us</strong></a>
-        </li>
-                </ul>  
-    </div>
-      </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- parallax section -->
-<section class = 'sample-work pb-5'>
-<div class="slider-container">
-        <div class="slider-control left inactive"></div>
-        <div class="slider-control right"></div>
-        <ul class="slider-pagi"></ul>
-        <div class="slider">
-          <div class="slide slide-0 active">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">S2S Philosophy</h2>
-                <p class="slide__text-desc">Nurturing a seed to become a sapling.</p>
-                
-              </div>
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Breaking News Area -->
+                    <div class="col-12 col-md-6">
+                        <div class="breaking-news-area">
+                            <h5 class="breaking-news-title">Breaking news</h5>
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">Brexit breakthrough in Brussels comes after week of drama</a></li>
+                                    <li><a href="#">Brexit breakthrough in Brussels</a></li>
+                                    <li><a href="#">Brexit breakthrough in Brussels comes after week of drama</a></li>
+                                    <li><a href="#">Brex comes after week of drama</a></li>
+                                    <li><a href="#">Brexit breakthrough in Bweek of drama</a></li>
+                                    <li><a href="#">Brexit bssels comes after week of drama</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stock News Area -->
+                    <div class="col-12 col-md-6">
+                        <div class="stock-news-area">
+                            <div id="stockNewsTicker" class="ticker">
+                                <ul>
+                                    <li>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>eur/usd</span>
+                                                <span>1.1862</span>
+                                            </div>
+                                            <div class="stock-index minus-index">
+                                                <h4>0.18</h4>
+                                            </div>
+                                        </div>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>BTC/usd</span>
+                                                <span>15.674.99</span>
+                                            </div>
+                                            <div class="stock-index plus-index">
+                                                <h4>8.60</h4>
+                                            </div>
+                                        </div>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>ETH/usd</span>
+                                                <span>674.99</span>
+                                            </div>
+                                            <div class="stock-index minus-index">
+                                                <h4>13.60</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>eur/usd</span>
+                                                <span>1.1862</span>
+                                            </div>
+                                            <div class="stock-index minus-index">
+                                                <h4>0.18</h4>
+                                            </div>
+                                        </div>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>BTC/usd</span>
+                                                <span>15.674.99</span>
+                                            </div>
+                                            <div class="stock-index plus-index">
+                                                <h4>8.60</h4>
+                                            </div>
+                                        </div>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>ETH/usd</span>
+                                                <span>674.99</span>
+                                            </div>
+                                            <div class="stock-index minus-index">
+                                                <h4>13.60</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>eur/usd</span>
+                                                <span>1.1862</span>
+                                            </div>
+                                            <div class="stock-index minus-index">
+                                                <h4>3.95</h4>
+                                            </div>
+                                        </div>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>BTC/usd</span>
+                                                <span>15.674.99</span>
+                                            </div>
+                                            <div class="stock-index plus-index">
+                                                <h4>4.78</h4>
+                                            </div>
+                                        </div>
+                                        <div class="single-stock-report">
+                                            <div class="stock-values">
+                                                <span>ETH/usd</span>
+                                                <span>674.99</span>
+                                            </div>
+                                            <div class="stock-index minus-index">
+                                                <h4>11.37</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="slide slide-1 ">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading1">In-school program</h2>
-                <p class="slide__text-desc1"><strong>JUMP AHEAD OF THE CURVE WITH S2S IN-SCHOOL PROGRAMME.</strong></p>
-                <a class="slide__text-link" href="portfolio.html">BROCHURE</a>
-              </div>
+        </div>
+        <!-- Middle Header Area -->
+        <div class="middle-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Logo Area -->
+                    <div class="col-12 col-md-4">
+                        <div class="logo-area">
+                            <a href="index.html"><h2><span style="color: red;">Live</span> Radio Feed</h2>
+                        </div>
+                    </div>
+                    <!-- Header Advert Area -->
+                    <div class="col-12 col-md-8">
+                        <div class="header-advert-area">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="slide slide-2">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading1">H-cube learning center</h2>
-                <p class="slide__text-desc">H-cube learning center: A constructivist approach towards STEM</p>
-                <a class="slide__text-link" href="portfolio.html">BROCHURE</a>
-              </div>
+        </div>
+        <!-- Bottom Header Area -->
+      <!--   <div class="bottom-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="main-menu">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- <div class="slide slide-3">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">Budget Homes</h2>
-                <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                <a class="slide__text-link" href="portfolio.html">Project link</a>
-              </div>
-            </div>
-          </div>
         </div> -->
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Welcome Blog Slide Area Start -->
+    <section class="welcome-blog-post-slide owl-carousel">
+        <!-- Single Blog Post -->
+        <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(img/blog-img/16.jpg);">
+            <!-- Single Blog Post Content -->
+            <div class="single-blog-post-content">
+                <div class="tags">
+                    <a href="#">Live Cricket</a>
+                </div>
+                <h3><a href="#" class="font-pt">India: 257/5(50)</a></h3>
+                <div class="date">
+                    <a href="#">March 25, 2020</a>
+                </div>
+            </div>
+        </div>
+        <!-- Single Blog Post -->
+        <div class="single-blog-post-slide bg-img background-overlay-5" ">
+            <!-- Single Blog Post Content -->
+            <!-- Card -->
+<div class="card weather-card">
+
+  <!-- Card content -->
+  <div class="card-body pb-3">
+
+    <!-- Title -->
+     <div class="tags">
+        <a href="#">Live Weather</a>
+    </div>
+    <!-- Text -->
+    <p class="card-text mt-5">Mon, 12:30 PM, Mostly Sunny</p>
+    <div class="d-flex justify-content-between">
+      <p class="display-1 degree">23</p>
+      <i class="fas fa-sun-o fa-5x pt-3 amber-text"></i>
+    </div>
+    <div class="d-flex justify-content-between mb-4 mt-5">
+      <p><i class="fas fa-tint fa-lg text-info pr-2"></i>3% Precipitation</p>
+      <p><i class="fas fa-leaf fa-lg grey-text pr-2"></i>21 km/h Winds</p>
+    </div>
+    <div class="progress md-progress">
+      <div class="progress-bar black" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <ul class="list-unstyled d-flex justify-content-between font-small text-muted mb-4 mt-5">
+      <li class="pl-4">8AM</li>
+      <li>11AM</li>
+      <li>2PM</li>
+      <li>5PM</li>
+      <li class="pr-4">8PM</li>
+    </ul>
+
+    <div class="collapse-content mt-5">
+
+      <div class="collapse" id="collapseExample">
+
+        <table class="table table-borderless table-sm mb-0">
+          <tbody>
+            <tr>
+              <td class="font-weight-normal align-middle">Tuesday</td>
+              <td class="float-right font-weight-normal">
+                <p class="mb-1">24&deg;<span class="text-muted">/12&deg;</span></p>
+              </td>
+              <td class="float-right mr-3">
+                <i class="fas fa-sun fa-lg amber-text"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-normal align-middle">Wednesday</td>
+              <td class="float-right font-weight-normal">
+                <p class="mb-1">19&deg;<span class="text-muted">/10&deg;</span></p>
+              </td>
+              <td class="float-right mr-3">
+                <i class="fas fa-cloud-sun-rain fa-lg text-info"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-normal align-middle">Thursday</td>
+              <td class="float-right font-weight-normal">
+                <p class="mb-1">23&deg;<span class="text-muted">/15&deg;</span></p>
+              </td>
+              <td class="float-right mr-3">
+                <i class="fas fa-sun fa-lg amber-text"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-normal align-middle">Friday</td>
+              <td class="float-right font-weight-normal">
+                <p class="mb-1">26&deg;<span class="text-muted">/19&deg;</span></p>
+              </td>
+              <td class="float-right mr-3">
+                <i class="fas fa-sun fa-lg amber-text"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-normal align-middle">Saturday</td>
+              <td class="float-right font-weight-normal">
+                <p class="mb-1">20&deg;<span class="text-muted">/16&deg;</span></p>
+              </td>
+              <td class="float-right mr-3">
+                <i class="fas fa-cloud fa-lg text-info"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-normal align-middle">Sunday</td>
+              <td class="float-right font-weight-normal">
+                <p class="mb-1">22&deg;<span class="text-muted">/13&deg;</span></p>
+              </td>
+              <td class="float-right mr-3">
+                <i class="fas fa-cloud-sun fa-lg text-info"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
       </div>
+
+      <hr class="">
+
+        <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 deep-purple-text collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></a>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- Card -->
+        </div>
+        <!-- Single Blog Post -->
+        <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(img/blog-img/27.jpg);">
+            <!-- Single Blog Post Content -->
+            <div class="single-blog-post-content">
+                <div class="tags">
+                    <a href="#">politics</a>
+                </div>
+                <h3><a href="#" class="font-pt">Financial advices </a></h3>
+                <div class="date">
+                    <a href="#">March 25, 2020</a>
+                </div>
+            </div>
+        </div>
+        <!-- Single Blog Post -->
+        <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(img/bg-img/2.jpg);">
+            <!-- Single Blog Post Content -->
+            <div class="single-blog-post-content">
+                <div class="tags">
+                    <a href="#">live</a>
+                </div>
+                <h3><a href="#" class="font-pt">The latest news live</a></h3>
+                <div class="date">
+                    <a href="#">March 25, 2020</a>
+                </div>
+            </div>
+        </div>
     </section>
-      
-<!-- parallax section ends -->
+    <!-- Welcome Blog Slide Area End -->
 
-
-<div class="container" id="about">
-  <div class="row">
-    <div class="col-12">
-
-<div class="card1">
-  
-  <div class="card-body">
-    <blockquote class="blockquote mb-0">
-      <h5 class="brwn"><strong>Vision</strong></h5>
-      <p class="para"><strong>Our vision is to create a framework that shall provide an ecosystem for children to explore their natural potential and nurture it for a meaningful life.</strong></p>
-<h5 class="brwn" id="abt"><strong>Mission</strong></h5>
-<p class="para"><strong>Our mission is to create an enriched, joyful and experiential learning environment where a child enjoys and actively participates to become knowledge generator and not merely being knowledge consumer. The focus is not only about intellectual development, but also on emotional stability and strong moral foundation.</strong></p>
-      
-    </blockquote>
-  </div>
-</div>
-</div></div></div>
-
-
-
-<!-- 
-<div class="container">
-  <div class="row">
-  	<div class="col-12">
-
-<h2 class="h1-responsive font-weight-bold text-center my-5">About Us</h2>
-  <p class="grey-text">
-
-
-Our vision is to create a framework that shall provide an ecosystem for children to explore their natural potential and nurture it for a meaningful life. <br>
-
- 
-Our mission is to create an enriched, joyful and experiential learning environment where a child enjoys and actively participates to become knowledge generator and not merely being knowledge consumer. The focus is not only about intellectual development, but also on emotional stability and strong moral foundation. 
-
-  </p>
-
-</div>
-</div>
-</div> -->
-
-<div class="container" id="our">
-  <div class="row">
-  <div class="col-12">
-
-
-
-<!-- Section: Features v.2 -->
-      <section class="my-5">
-
-  <!-- Section heading -->
-      <h2 class="h1-responsive font-weight-bold text-center my-5" id="we">Our Solutions</h2>
-
-  <!-- Section description -->
-    <div class="card-deck">
-      <div class="card text-center mb-3" >
-        <div class="card-body" id="crd2">
-          <img src="university.svg" width="55" height="55" class="icn">
-        <h5 class="card-title"><br>S2S In-School Program</h5>
-        <p class="card-text">Creating an enriched, joyful and experiential learning environment  where a student becomes knowledge generator instead of knowledge consumer.</p>
-        <a class="btn btn-green btn-sm">Learn more</a>
-      </div>
-    </div>
-    <div class="card text-center mb-3">
-      <div class="card-body" id="crd2">
-        <img src="team.svg" width="55" height="55">
-      <h5 class="card-title"><br>H-Cube Learning Center</h5>
-      <p class="card-text">Hearts-on, Heads-on and Hands-on learning through advanced projects in STEM.</p><br>
-      <a class="btn btn-green btn-sm">Learn more</a>
-      </div>
-    </div>
-    <div class="card text-center mb-3">
-      <div class="card-body" id="crd2">
-        <img src="microscope.svg" width="55" height="55">
-      <h5 class="card-title"><br>Learning Models</h5>
-      <p class="card-text">Innovative models to aid in the learning process, including some of those used in original discoveries.</p>
-      <a class="btn btn-green btn-sm">Learn more</a>
-      </div>
-    </div>
-</section>
-<!-- Section: Features v.2 -->
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-</div></div>
-
-
-
-
-
-
-
-
-
-
-
-<section id="testimonial" class="parallax-section">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="ts-testimonial-slide">
-          <div class="ts-testimonial-item">
-            <p class="para">"We adopted this programme to help our children learn various skills and in the process they became knowledge generators themselves. The philosophy being that every session should be filled with student interest, engagement, fun, thinking and hands-on activity. These sessions are well planned and well implemented professional development sessions, aligned to curriculum."</p>
-            <div class="infor-client">
-              <span class="icon-client"><img src="assets/images/icon-testimonial.png" alt=""></span>
-              <span class="client-name">Mrs. Ambika</span>
-              <span class="client-position">Principal, KHS Adarsh High School, Bangalore</span>
+    <!-- Latest News Marquee Area Start -->
+    <div class="latest-news-marquee-area">
+        <div class="simple-marquee-container">
+            <div class="marquee">
+                <ul class="marquee-content-items">
+                    <li>
+                        <a href="#"><span class="latest-news-time">10:40</span> The Facebook Live stream that could presage TV</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="latest-news-time">11:02</span> Opinion: It's time to start talking about impeachment</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="latest-news-time">12:37</span> Clinton aims to shore up Wisconsin with new TV ads</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="latest-news-time">13:59</span> Trump signs tax bill before leaving for Mar-a-Lago</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="ts-testimonial-item">
-            <p class="para">"The art of teaching is the art of assisting discovery. Students discovers the concepts while performing the activities. Students are eager to face new challenges in activities. Students develops creative thinking, and collaborative skills while performing the activities. "</p>
-            <div class="infor-client">
-              <span class="icon-client"><img src="assets/images/icon-testimonial.png" alt=""></span>
-              <span class="client-name">Mrs. Gayathri Bhaskar </span>
-              <span class="client-position">Science Teacher, MLA School, Malleshwaram </span>
-            </div>
-          </div>
-
-					<div class="ts-testimonial-item">
-						<p class="para">"The seven day summer camp was indeed a week to cherish.
-The facilitators wonderfully made even complex concepts like human body, music, flowers, lightning etc seem so easy to understand with their highly dedicated efforts complemented with wonderfully designed modules.
-All the very best to these young faculties power packed with energy and brilliance."</p>
-						<div class="infor-client">
-							<span class="icon-client"><img src="assets/images/icon-testimonial.png" alt=""></span>
-							<span class="client-name">Vikram Kothari</span>
-							<span class="client-position">Parent, Industrialist</span>
-						</div>
-					</div>
-					
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-
-
-
-
-<!-- Our Team v.4 -->
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-
-<!-- Section: Team v.4 -->
-      <section class="my-5">
-
-  <!-- Section heading -->
-      <h1 class="h1-responsive font-weight-bold text-center my-5">Our amazing team</h1>
-  
-
-  <!-- Grid row -->
-      <div class="row">
-
-    <!-- Grid column -->
-        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-
-      <!-- Rotating card -->
-          <div class="card-wrapper">
-            <div id="card-1" class="card card-rotating text-center">
-          <!-- Front Side -->
-              <div class="face front">
-            
-            <!-- Avatar -->
-                <div class="avatar mx-auto white">
-                  <img src="pankaj.png" class="rounded-circle img-fluid" alt="First sample avatar image">
-                </div>
-            <!-- Content -->
-                <div class="card-body">
-                  <h4 class="crdhead">Pankaj Jain</h4>
-                  <p class="font-weight-bold dark-grey-text">Co-Founder & Director</p>
-                  <p class="para">He worked on the forces governing protein folding for his PhD from IISc and did a Post - Doc in Neuroscience of stress at InStem, Bangalore. He has been volunteering in govt. schools for 7 years and is ‘Mentor for Change’ for ATLs</p>
-  <hr>
-              <!-- Social Icons -->
-                <ul class="list-inline list-unstyled">
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/rmbtmp">
-                    <i class="fa fa-facebook-square"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg pin-ic" href="https://www.linkedin.com/in/pankaj-jain-7252751b/">
-                    <i class="fa fa-linkedin"> </i>
-                  </a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg tw-ic" href="https://twitter.com/rmbtmp">
-                    <i class="fa fa-twitter"> </i>
-                  </a>
-                </li>
-              </ul>
-                  </p>
-              <!-- Triggering button -->
-                </div>
-              </div>
-
-          
         </div>
-      </div>
-      <!-- Rotating card -->
-
     </div>
-    <!-- Grid column -->
+    <!-- Latest News Marquee Area End -->
 
-    <!-- Grid column -->
-    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-      <!-- Rotating card -->
-      <div class="card-wrapper">
-        <div id="card-2" class="card card-rotating text-center">
-          <!-- Front Side -->
-          <div class="face front">
-            <!-- Image -->
-            <!-- <div class="card-up">
-              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/82.jpg" alt="Team member card image">
-            </div> -->
-            <!-- Avatar -->
-            <div class="avatar mx-auto white">
-              <img src="tarun.png" class="rounded-circle" alt="Second sample avatar image">
-            </div>
-            <!-- Content -->
-            <div class="card-body">
-              <h4 class="crdhead">Tarun Choubisa</h4>
-              <p class="font-weight-bold dark-grey-text">Co-Founder & Director</p>
-               <p class="para">He developed WSN for intrusion classification using machine learning for his PhD from IISc. Mission10X Dale Carnegie certification for High Impact Teaching Skills and 'Mentor for Change' for ATLs.
-              </p>
-              <hr>
-              <!-- Social Icons -->
-              <ul class="list-inline list-unstyled">
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/tarun.choubisa.1">
-                    <i class="fa fa-facebook-square"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg pin-ic" href="https://www.linkedin.com/in/tarun-choubisa-0ba56152/">
-                    <i class="fa fa-linkedin"> </i>
-                  </a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg tw-ic" href="https://twitter.com/TarunChoubisa">
-                    <i class="fa fa-twitter"> </i>
-                  </a>
-                </li>
-              </ul>
-             
-            </div>
-          </div>
-          <!-- Front Side -->
-          <!-- Back Side -->
-          
-        </div>
-      </div>
-      <!-- Rotating card -->
-    </div>
-    <!-- Grid column -->
+    <!-- Footer -->
+<footer class="page-footer font-small black mt-5">
 
-    <!-- Grid column -->
-    <div class="col-lg-4 col-md-12">
-      <!-- Rotating card -->
-      <div class="card-wrapper">
-        <div id="card-3" class="card card-rotating text-center">
-          <!-- Front Side -->
-          <div class="face front">
-            <!-- Image -->
-            <!-- <div class="card-up">
-              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(14).jpg"
-                alt="Team member card image">
-            </div> -->
-            <!-- Avatar -->
-            <div class="avatar mx-auto white">
-              <img src="sridhar.png" class="rounded-circle img-fluid"
-                alt="Third sample avatar image">
-            </div>
-            <!-- Content -->
-            <div class="card-body">
-              <h4 class="crdhead">Sridhar P</h4>
-              <p class="font-weight-bold dark-grey-text" >Co-Founder & Director</p>
-              <p class="para">He completed in MTech from IISc and entered corporate world, just to leave it later and have been working in the field of school education for last 5 years. En route, he also mentored govt. schools students for international competitions.
-              </p>
-              <hr>
-              <!-- Social Icons -->
-              <ul class="list-inline list-unstyled">
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/sridhar.pichaimuthu">
-                    <i class="fa fa-facebook-square"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg pin-ic" href="https://www.linkedin.com/in/sridhar-p-6087344a/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a class="p-2 fa-lg tw-ic" href="https://twitter.com/srichallap">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-            
-            </div>
-          </div>
-         
-        </div>
-      </div>
-      <!-- Rotating card -->
-    </div>
-    <!-- Grid column -->
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
 
-  </div>
-  <!-- Grid row -->
-
-</section>
-<!-- Section: Team v.4 -->
-
-
-
-
-</div></div></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container" id="contact">
-  <div class="row">
-  <div class="col-12">
-
-
-<!--Section: Contact v.2-->
-<section class="mb-4">
-
-    <!--Section heading-->
-    <h1 class="h1-responsive font-weight-bold text-center my-4">Contact us</h1>
-   
-
+    <!-- Grid row -->
     <div class="row">
 
-        <!--Grid column-->
-        <div class="col-md-4 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-                  </div>
-<div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="1" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-green" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-5 text-center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248781.11458591666!2d77.557158!3d13.022619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3da53845cc09%3A0xd5fa2cc0a0872808!2s6%2F1%2C+Mutha+Enclave%2C+Nanjappa+Reddy+Colony%2C+Yeshwanthpur%2C+Bengaluru%2C+Karnataka+560022!5e0!3m2!1sen!2sin!4v1544979524861" width="270" height="300" frameborder="0" style= "margin-top: 40px;"  "border:0" allowfullscreen "></iframe>
-        </div>
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li style="margin-top: 20px;"><i class="fa fa-map-marker fa-2x"></i>
-                    <p class="para">6/1, Mutha Enclave, N.R. Colony, 1st Main Road, Yeshwantpur, Bangalore 560022</p>
-                </li>
-
-                <li><i class="fa fa-phone mt-4 fa-2x"></i>
-                    <p class="para">+91 - 9902346354</p>
-                </li>
-
-                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
-                    <p class="para">contact@s2seducation.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
+     
 
     </div>
+    <!-- Grid row -->
 
-</section>
-<!--Section: Contact v.2-->
-
-
-</div></div></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small green" id="foot">
+  </div>
+  <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-2"><strong>© 2018 Copyright:
-    <a href="http://s2seducation.com/">S2S2 Education</strong></a>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">Live Radio Feed </a>
   </div>
   <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
+    <!-- Footer Area End -->
 
-  
-
-
-
-
-
-
-
-
-
-
-
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/js/mdb.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
-
-
-
-<script type="text/javascript">
-	window.addEventListener("load", function(){
-		setTimeout(function(){        
-    document.getElementById("loader").style.display="none"; 
-}, 50);
-		
-	});
-	 
-</script>
-<script type="text/javascript">
-/* parallax script */
-var $slider = $(".slider"),
-      $slideBGs = $(".slide__bg"),
-      diff = 0,
-      curSlide = 0,
-      numOfSlides = $(".slide").length-1,
-      animating = false,
-      animTime = 500,
-      autoSlideTimeout,
-      autoSlideDelay = 5000,
-      $pagination = $(".slider-pagi");
-  
-  function createBullets() {
-    for (var i = 0; i < numOfSlides+1; i++) {
-      var $li = $("<li class='slider-pagi__elem'></li>");
-      $li.addClass("slider-pagi__elem-"+i).data("page", i);
-      if (!i) $li.addClass("active");
-      $pagination.append($li);
-    }
-  };
-  
-  createBullets();
-  
-  function manageControls() {
-    $(".slider-control").removeClass("inactive");
-    if (!curSlide) $(".slider-control.left").addClass("inactive");
-    if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
-  };
-  
-  function autoSlide() {
-    autoSlideTimeout = setTimeout(function() {
-      curSlide++;
-      if (curSlide > numOfSlides) curSlide = 0;
-      changeSlides();
-    }, autoSlideDelay);
-  };
-  
-  autoSlide();
-  
-  function changeSlides(instant) {
-    if (!instant) {
-      animating = true;
-      manageControls();
-      $slider.addClass("animating");
-      $slider.css("top");
-      $(".slide").removeClass("active");
-      $(".slide-"+curSlide).addClass("active");
-      setTimeout(function() {
-        $slider.removeClass("animating");
-        animating = false;
-      }, animTime);
-    }
-    window.clearTimeout(autoSlideTimeout);
-    $(".slider-pagi__elem").removeClass("active");
-    $(".slider-pagi__elem-"+curSlide).addClass("active");
-    $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
-    $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
-    diff = 0;
-    autoSlide();
-  }
-
-  function navigateLeft() {
-    if (animating) return;
-    if (curSlide > 0) curSlide--;
-    changeSlides();
-  }
-
-  function navigateRight() {
-    if (animating) return;
-    if (curSlide < numOfSlides) curSlide++;
-    changeSlides();
-  }
-
-  $(document).on("mousedown touchstart", ".slider", function(e) {
-    if (animating) return;
-    window.clearTimeout(autoSlideTimeout);
-    var startX = e.pageX || e.originalEvent.touches[0].pageX,
-        winW = $(window).width();
-    diff = 0;
-    
-    $(document).on("mousemove touchmove", function(e) {
-      var x = e.pageX || e.originalEvent.touches[0].pageX;
-      diff = (startX - x) / winW * 70;
-      if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
-      $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
-      $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
-    });
-  });
-  
-  $(document).on("mouseup touchend", function(e) {
-    $(document).off("mousemove touchmove");
-    if (animating) return;
-    if (!diff) {
-      changeSlides(true);
-      return;
-    }
-    if (diff > -8 && diff < 8) {
-      changeSlides();
-      return;
-    }
-    if (diff <= -8) {
-      navigateLeft();
-    }
-    if (diff >= 8) {
-      navigateRight();
-    }
-  });
-  
-  $(document).on("click", ".slider-control", function() {
-    if ($(this).hasClass("left")) {
-      navigateLeft();
-    } else {
-      navigateRight();
-    }
-  });
-  
-  $(document).on("click", ".slider-pagi__elem", function() {
-    curSlide = $(this).data("page");
-    changeSlides();
-  });
-  </script>
-
-
-
-
-
-<script type="text/javascript">
-	//TESTIMONIAL SLIDER
-    if ($(".ts-testimonial-slide").length > 0) {
-    
-        $(".ts-testimonial-slide").owlCarousel({
-            autoPlay: 4000,
-            slideSpeed: 1000,
-            navigation: false,
-            pagination: true,
-            singleItem: true
-        });
-    };
-</script>
-
-
-
-
-
-
-
-<script type="text/javascript">
-	
-
-    // Navigation
-        // Responsive Toggle Navigation =============================================
-        let menuIcon = document.querySelector('.menuIcon');
-        let nav = document.querySelector('.overlay-menu');
-
-        menuIcon.addEventListener('click', () => {
-            if (nav.style.transform != 'translateX(0%)') {
-                nav.style.transform = 'translateX(0%)';
-                nav.style.transition = 'transform 0.2s ease-out';
-            } else { 
-                nav.style.transform = 'translateX(-100%)';
-                nav.style.transition = 'transform 0.2s ease-out';
-            }
-        });
-
-
-        // Toggle Menu Icon ========================================
-        let toggleIcon = document.querySelector('.menuIcon');
-
-        toggleIcon.addEventListener('click', () => {
-            if (toggleIcon.className != 'menuIcon toggle') {
-                toggleIcon.className += ' toggle';
-            } else {
-                toggleIcon.className = 'menuIcon';
-            }
-        });
-</script>
-
-
-
-
-
-
-
-
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
 
 </body>
+
 </html>
